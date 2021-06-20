@@ -109,3 +109,5 @@ ENV/
 **/.DS_Store
 
 /audio_out
+
+/data/shapes/logs
