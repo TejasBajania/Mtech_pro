@@ -193,35 +193,20 @@ def index():
     return render_template('index.html')
 
 #PIZZA API
-@app.route('/upload', methods=["GET", "POST"])
-def upload():
-    if request.method == "POST":
+@app.route('/upload', "POST")
 
-        if request.files:
-            image = request.files["image"]
-            if(os.path.isfile(HOME_DIR + "./static/1.png")):
-                os.remove(HOME_DIR + "./static/1.png")
-            res = []
-            res,file = getImage(image)
-        
-            return render_template("view.html",image_name = file, data=res)
+def upload():
+    
+    if request.files:
+        image = request.files["image"]
+        if(os.path.isfile(HOME_DIR + "./static/1.png")):
+            os.remove(HOME_DIR + "./static/1.png")
+        res = []
+        res,file = getImage(image)
+    
+        return render_template("view.html",image_name = file, data=res)
     return render_template('upload.html')
 
-#PIZZA API
-# @app.route('/check_nodes', methods=["GET", "POST"])
-# def check_nodes():
-#     if request.method == "POST":
-
-#         if request.files:
-#             # image = request.files["image"]
-#             image = 
-#             if(os.path.isfile(HOME_DIR + "./static/1.png")):
-#                 os.remove(HOME_DIR + "./static/1.png")
-#             res = []
-#             res,file = getImage(image)
-        
-#             return render_template("view.html",image_name = file, data=res)
-#     return render_template('upload.html')
 # #MAIN
 if __name__ == '__main__':
-    app.run(debug = True, use_reloader = False) 
+    app.run(use_reloader = False) 
