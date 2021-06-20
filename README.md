@@ -10,8 +10,6 @@ For detailed understanding check [Document_for_understanding]:[https://github.co
 
 ![normal_detect_single](https://user-images.githubusercontent.com/33371855/122665168-4fa56780-d1c3-11eb-9d86-0706731527c5.JPG)
 
-Model detected multiple denomination in an image with average precision (MAP) of 80
-
 ## Example input of Image with multiple denomination
 
 ![Test_image (9)](https://user-images.githubusercontent.com/33371855/122665254-cd697300-d1c3-11eb-8363-72c9fc3dab91.jpg)
@@ -20,8 +18,4 @@ Model detected multiple denomination in an image with average precision (MAP) of
 
 ![normal_detect1](https://user-images.githubusercontent.com/33371855/122665323-2df8b000-d1c4-11eb-8916-223d4ba5328b.JPG)
 
-
-
-
-
-
+Model detected multiple denomination in an image with average precision (MAP) of 80
