@@ -108,3 +108,4 @@ ENV/
 
 **/.DS_Store
 
+/audio_out

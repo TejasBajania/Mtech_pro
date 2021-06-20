@@ -1,0 +1,83 @@
+<html>
+   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+        .floatLeft { width: 60%; float: left; }
+        .floatRight {width: 40%; float: right; }
+        .container { overflow: hidden; }  
+    </style>   
+            
+     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="{{ url_for('index') }}">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+         <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('upload') }}">Currency </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+     <div class="alert alert-info" role="alert">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+                <a class="nav-link" href="{{ url_for('upload') }}">Back </a>
+                <div>
+                    <title> Denominations detected in the uploaded image </title>
+                <h2> Denominations detected in the uploaded image</h2>
+                <div class="container">
+                    <div class="floatLeft">
+                        <body>
+                            <img src = "{{url_for('static', filename = '1.png')}}" height="700" width="600">
+                        </body>
+                    </div>
+                    
+                       <div class="floatRight">
+                        <body>
+                           <ul class="list-group">
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                10 Rupee
+                                <span class="badge badge-primary badge-pill">{{data[0]}}</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                20 Rupee
+                                <span class="badge badge-primary badge-pill">{{data[1]}}</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                50 Rupee
+                                <span class="badge badge-primary badge-pill">{{data[2]}}</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                100 Rupee
+                                <span class="badge badge-primary badge-pill">{{data[3]}}</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                200 Rupee
+                                <span class="badge badge-primary badge-pill">{{data[4]}}</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                500 Rupee
+                                <span class="badge badge-primary badge-pill">{{data[5]}}</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-center">
+                                2000 Rupee
+                                <span class="badge badge-primary badge-pill">{{data[6]}}</span>
+                              </li>
+                            </ul>
+                                </thead>
+                            </table>
+                        </body>
+                    </div>
+                    </div>
+                </div>
+             </div>
+          </div>
+        </div>
+    </div>
+</html>
