@@ -1,6 +1,18 @@
 # Currency denomination identification using MASK-RCNN 
 Sample project for instance segmentation. Here users can upload an image and test the implementation of instance segmentation. The project can be used for currency denomination identification. Denominations used are from the Indian currency system were in use till August 2019.
 
+### Installation
+```console
+git clone https://github.com/TejasBajania/Mtech_pro.git
+```
+#### After cloning create environment
+```console
+conda env create -f environment.yml
+```
+#### Start server
+```console
+python app_new.py
+```
 ### Flow used in project preparation:
 
 1. Prepared Images related to Indian currency denomination with total of 1000 Images of different denomination (100 each).
@@ -41,3 +53,5 @@ https://patrickwasp.com/train-a-mask-r-cnn-model-on-your-own-dataset/
 <strong> Model detected multiple denomination in an image with average precision (MAP) of 80. </strong>
 
 <strong> You can use this for your reference but its not ready for production. Use it for reference. </strong>
+
+
