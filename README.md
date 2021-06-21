@@ -35,6 +35,7 @@ https://patrickwasp.com/train-a-mask-r-cnn-model-on-your-own-dataset/
 - Mask R-CNN (object detection and segmentation) [[arXiv](https://arxiv.org/abs/1703.06870), [source](https://github.com/matterport/Mask_RCNN)]
 - FCN (class segmentation) [[arXiv](https://arxiv.org/abs/1605.06211), [source](https://github.com/aurora95/Keras-FCN)]
 
+# Results
 ## Example input of Image with single denomination
 ![single_class](https://user-images.githubusercontent.com/33371855/122665007-5bdcf500-d1c2-11eb-9517-5914649c10af.jpg)
 
