@@ -53,6 +53,3 @@ https://patrickwasp.com/train-a-mask-r-cnn-model-on-your-own-dataset/
 
 <strong> Model detected multiple denomination in an image with average precision (MAP) of 80. </strong>
 
-<strong> You can use this for your reference but its not ready for production. Use it for reference. </strong>
-
-
