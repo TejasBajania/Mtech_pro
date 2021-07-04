@@ -193,7 +193,7 @@ def index():
     return render_template('index.html')
 
 #PIZZA API
-@app.route('/upload', "POST")
+@app.route('/upload', methods = ["POST", "GET"])
 
 def upload():
     

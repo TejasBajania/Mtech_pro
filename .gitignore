@@ -111,3 +111,5 @@ ENV/
 /audio_out
 
 /data/shapes/logs/shapes20200316T1634/mask_rcnn_shapes_0201.h5
+
+/static/*
